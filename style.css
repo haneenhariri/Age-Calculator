@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Zilla Slab", serif;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.calc-age
+{
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.calc-age h1{
+    margin-bottom: 30px;
+}
+.input-filde
+{
+    background-color: rgb(248, 220, 234);
+    width: 400px;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid black;
+}
+.input-filde input
+{
+    width: 250px;
+    padding: 10px;
+    height: 40px;
+}
+.input-filde button
+{
+    padding: 5px;
+    height: 40px;
+    font-size: large;
+}
+.output
+{
+    
+    margin-top: 20px;
+    width: 300px;
+    display: flex;
+    justify-content:center;
+    padding: 20px 10px;
+}
+.output div{
+    margin: 10px;
+    height: 70px;
+    width: 90px;
+    background-color: rgb(248, 220, 234);
+    font-size: large;
+    border-radius: 5px;
+    text-align: center;  
+    padding: 20px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+@media (min-width:250px) and (max-width:450px)
+{
+    .input-filde{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 300px;
+        height: 140px;
+        padding: 10px;
+        width: 250px;
+    }
+    .input-filde input
+    {
+        width: 100%;
+    }
+    .output
+    {
+        flex-wrap: wrap;
+
+    }
+    .output div{
+        height: 60px;
+        width: 60px;
+        padding: 10px;
+        font-size: medium;
+    }
+}
